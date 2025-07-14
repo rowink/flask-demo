@@ -13,8 +13,8 @@ class App(Flask):
     def _register_blueprints(self):
         self.register_blueprint(index)
 
+app = App(__name__)
 
 if __name__ == '__main__':
-    app = App(__name__)
     app.debug = True
     app.run()
